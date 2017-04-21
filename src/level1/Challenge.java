@@ -11,15 +11,30 @@ public class Challenge extends Head {
 
 	public Challenge(Roomba roomba) {
 		super(roomba);
+		
 	}
 	/**
 	 * Without touching the wall reach the endZone
 	 * use sleep an driveDirect 
 	 */
 	public void initialize() {
-		//write code here!
+	
+	driveDirect(400, 500);
+	sleep(3700);
+	driveDirect(0,0);
+	driveDirect(500, 500);	
+	sleep(3500);
+	driveDirect(0,0);
+	driveDirect(400, 500);
+	sleep(3700);
+	driveDirect(0,0);
+
+	
 		
-		
+	}
+
+	private void speed(int i) {
+		// TODO Auto-generated method stub
 		
 	}
 
